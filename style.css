@@ -73,3 +73,38 @@
 .contact-container button:hover {
   background-color: #C4451F;
 }
+
+/* ABOUT SECTION */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  border: 3px solid #2B3A55;
+  flex-shrink: 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
